@@ -1,0 +1,40 @@
+body{
+    padding-top: calc(5rem + 20px);
+}
+#Header, #thisDiv{
+  position: fixed!important;
+  z-index: 1;
+  left: 0px;
+}
+#Header{
+  top: 0px;
+}
+#thisDiv{
+  width: 100%;
+  top: 5em;
+  line-height: 20px;
+}
+#thisDiv > .infoLogin{
+  padding-bottom: 0px;
+}
+td.negative{
+  font-weight: bold;
+  color: #F44336;
+}
+#SoldesAbsencesPerso td:last-child{
+  position: relative;
+}
+#SoldesAbsencesPerso td:last-child:after{
+  content: "•";
+  position: absolute;
+  font-size: 40px;
+  line-height: 25px;
+  top: 0px;
+  right: 5px;
+}
+#SoldesAbsencesPerso td:not(.done):after{
+  color: #F44336;
+}
+#SoldesAbsencesPerso td.done:after{
+  color: #4CAF50;
+}
