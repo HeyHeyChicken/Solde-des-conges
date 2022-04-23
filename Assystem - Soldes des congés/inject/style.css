@@ -20,25 +20,25 @@ table{
   background-color: white!important;
   height: 100px!important;
 }
-#Header > form{
-  margin-bottom: 0px;
-}
-#Header > form > button{
-  border: none;
-  padding: 0px 15px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: transparent;
-}
-#Header > form > button:not(:disabled){
-  cursor: pointer;
-}
-#Header > form > button:not(.redButton){
-  color: black;
-}
-#Header > form > button.redButton{
-  color: #e12d2d;
-}
+  #Header > form{
+    margin-bottom: 0px;
+  }
+    #Header > form > button{
+      border: none;
+      padding: 0px 15px;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: transparent;
+    }
+      #Header > form > button:not(:disabled){
+        cursor: pointer;
+      }
+      #Header > form > button:not(.redButton){
+        color: black;
+      }
+      #Header > form > button.redButton{
+        color: #e12d2d;
+  }
 #thisDiv{
   width: 100%;
   top: 100px;
@@ -47,9 +47,9 @@ table{
   border-color: #c3c3c3;
   border-style: solid;
 }
-#thisDiv > .infoLogin{
-  padding-bottom: 0px;
-}
+  #thisDiv > .infoLogin{
+    padding-bottom: 0px;
+  }
 td.negative{
   font-weight: bold;
   color: #F44336;
@@ -57,14 +57,14 @@ td.negative{
 #SoldesAbsencesPerso td:last-child{
   position: relative;
 }
-#SoldesAbsencesPerso td:last-child:after{
-  content: "•";
-  position: absolute;
-  font-size: 40px;
-  line-height: 25px;
-  top: 0px;
-  right: 5px;
-}
+  #SoldesAbsencesPerso td:last-child:after{
+    content: "•";
+    position: absolute;
+    font-size: 40px;
+    line-height: 25px;
+    top: 0px;
+    right: 5px;
+  }
 #SoldesAbsencesPerso td:not(.done):after{
   color: #F44336;
 }

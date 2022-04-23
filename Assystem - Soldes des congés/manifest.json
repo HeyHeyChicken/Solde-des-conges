@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Assystem - Soldes des congés",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Cette extention Chrome améliore la page des soldes des congés de l'entreprise Assystem.",
   "icons": {
     "128": "icons/128.png",
