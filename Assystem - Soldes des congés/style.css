@@ -1,5 +1,14 @@
 body{
     padding-top: calc(5rem + 20px);
+    background-color: #e9e7e3;
+}
+table{
+  background-color: white;
+}
+#logoEgencia{
+  height: 70px;
+  width: 100px;
+  margin: 15px 40px;
 }
 #Header, #thisDiv{
   position: fixed!important;
@@ -8,11 +17,35 @@ body{
 }
 #Header{
   top: 0px;
+  background-color: white!important;
+  height: 100px!important;
+}
+#Header > form{
+  margin-bottom: 0px;
+}
+#Header > form > button{
+  border: none;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+}
+#Header > form > button:not(:disabled){
+  cursor: pointer;
+}
+#Header > form > button:not(.redButton){
+  color: black;
+}
+#Header > form > button.redButton{
+  color: #e12d2d;
 }
 #thisDiv{
   width: 100%;
-  top: 5em;
+  top: 100px;
   line-height: 20px;
+  border-width: 1px 0px;
+  border-color: #c3c3c3;
+  border-style: solid;
 }
 #thisDiv > .infoLogin{
   padding-bottom: 0px;

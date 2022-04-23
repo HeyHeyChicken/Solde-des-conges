@@ -1,3 +1,5 @@
+document.getElementById("logoEgencia").src = "https://www.assystem.com/wp-content/themes/assystem-corpo/dist/images/icons/logo-big.png";
+
 const PREMIER_TABLEAU = document.querySelector("#SoldeCongePerso > table > tbody");
 const PREMIER_TABLEAU_TRS = PREMIER_TABLEAU.querySelectorAll("tr");
 
