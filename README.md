@@ -6,9 +6,7 @@ Cette extention Chrome améliore la page des soldes des congés de l'entreprise 
 </div>
 <br><br>
 <div align="center">
-<a href="">
 <img src="https://github.com/HeyHeyChicken/Assystem-Soldes-des-conges/blob/main/resources/screen.jpeg">
-</a>
 </div>
 
 <br>

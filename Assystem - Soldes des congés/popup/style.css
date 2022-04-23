@@ -1,0 +1,28 @@
+body{
+  width: 400px;
+  text-align: center;
+}
+
+  img{
+    width: 100px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  a > button{
+    background-color: #e12d2d;
+    color: white;
+    border: 2px solid #e12d2d;
+    font-size: 20px;
+    border-radius: 1000px;
+    font-weight: bold;
+    padding: 17px 50px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+    a > button:hover{
+      background-color: white;
+      color: #e12d2d;
+    }

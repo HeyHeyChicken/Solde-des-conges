@@ -8,13 +8,21 @@
     "48": "icons/48.png",
     "16": "icons/16.png"
   },
+  "action": {
+    "default_icon": {
+      "128": "icons/128.png",
+      "48": "icons/48.png",
+      "16": "icons/16.png"
+    },
+    "default_popup": "popup/index.html"
+  },
   "author": "Antoine Duval",
   "homepage_url": "https://github.com/HeyHeyChicken/Assystem-Soldes-des-conges",
   "content_scripts": [
    {
      "matches": ["https://hive-dashboard.assystem.com/*"],
-     "js": ["script.js"],
-     "css": ["style.css"]
+     "js": ["inject/script.js"],
+     "css": ["inject/style.css"]
    }
  ]
 }

@@ -16,6 +16,46 @@ let interval = setInterval(function () {
   }
 }, 100);
 
+// Cette fonction répercute les jours "RTT" du deuxième tableau au premier.
+function DoRTT(_salaryMode, _value, _statut, _tds){
+  const TD1 = PREMIER_TABLEAU_TRS[_salaryMode ? 8 : 7].querySelectorAll("td")[3];
+  SetTDValue(TD1, (TD1.innerHTML - _value));
+
+  if(_statut.includes("Demande non encore validée ou pointée")){
+    const TD2 = PREMIER_TABLEAU_TRS[_salaryMode ? 8 : 7].querySelectorAll("td")[2];
+    SetTDValue(TD2, (TD2.innerHTML - _value));
+  }
+
+  _tds[4].classList.add("done");
+}
+
+// Cette fonction répercute les jours "Congés payés" du deuxième tableau au premier.
+function DoCP(_statutValideOuPointe, _value){
+  const TD1 = PREMIER_TABLEAU_TRS[3].querySelectorAll("td")[_statutValideOuPointe ? 3 : 2];
+  let value1 = parseFloat((TD1.innerHTML));
+  if(value1 - _value < 0){
+    const VALUE1bis = value1 - _value;
+    value1 = 0;
+
+    const TD1bis = PREMIER_TABLEAU_TRS[2].querySelectorAll("td")[_statutValideOuPointe ? 3 : 2];
+    const TD1bisValue = parseFloat(TD1bis.innerHTML);
+    SetTDValue(TD1bis, (TD1bisValue + VALUE1bis));
+  }
+  SetTDValue(TD1, value1);
+}
+
+// Cette fonction définit le contenu d'une cellule.
+function SetTDValue(_td, _value){
+  const CLASS_NAME = "negative";
+  _td.innerHTML = _value == 0 ? _value : _value.toFixed(2);
+  if(_value < 0){
+    _td.classList.add(CLASS_NAME);
+  }
+  else{
+    _td.classList.remove(CLASS_NAME);
+  }
+}
+
 function launch(){
   // Dans cette boucle, nous ajoutons une colonne vide intitulée "Moins absences" dans le premier tableau.
   for(let i = 0; i < PREMIER_TABLEAU_TRS.length; i++){
@@ -37,46 +77,6 @@ function launch(){
     }
     SECOND_CONTAINER.appendChild(document.createTextNode(i == 0 ? "Non encore validés ou pointés (?)" : value));
     PREMIER_TABLEAU_TRS[i].appendChild(SECOND_CONTAINER);
-  }
-
-  // Cette fonction répercute les jours "RTT" du deuxième tableau au premier.
-  function DoRTT(_salaryMode, _value, _statut, _tds){
-    const TD1 = PREMIER_TABLEAU_TRS[_salaryMode ? 8 : 7].querySelectorAll("td")[3];
-    SetTDValue(TD1, (TD1.innerHTML - _value));
-
-    if(_statut.includes("Demande non encore validée ou pointée")){
-      const TD2 = PREMIER_TABLEAU_TRS[_salaryMode ? 8 : 7].querySelectorAll("td")[2];
-      SetTDValue(TD2, (TD2.innerHTML - _value));
-    }
-
-    _tds[4].classList.add("done");
-  }
-
-  // Cette fonction répercute les jours "Congés payés" du deuxième tableau au premier.
-  function DoCP(_statutValideOuPointe, _value){
-    const TD1 = PREMIER_TABLEAU_TRS[3].querySelectorAll("td")[_statutValideOuPointe ? 3 : 2];
-    let value1 = parseFloat((TD1.innerHTML));
-    if(value1 - _value < 0){
-      const VALUE1bis = value1 - _value;
-      value1 = 0;
-
-      const TD1bis = PREMIER_TABLEAU_TRS[2].querySelectorAll("td")[_statutValideOuPointe ? 3 : 2];
-      const TD1bisValue = parseFloat(TD1bis.innerHTML);
-      SetTDValue(TD1bis, (TD1bisValue + VALUE1bis));
-    }
-    SetTDValue(TD1, value1);
-  }
-
-  // Cette fonction définit le contenu d'une cellule.
-  function SetTDValue(_td, _value){
-    const CLASS_NAME = "negative";
-    _td.innerHTML = _value == 0 ? _value : _value.toFixed(2);
-    if(_value < 0){
-      _td.classList.add(CLASS_NAME);
-    }
-    else{
-      _td.classList.remove(CLASS_NAME);
-    }
   }
 
   for(let i = 1; i < deuxieme_tableau_trs.length; i++){
