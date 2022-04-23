@@ -24,6 +24,7 @@ Rendez-vous à [cette adresse](//hive-dashboard.assystem.com/) avec votre naviga
 Voici les fonctionnalités qui sont ajoutées :<br/>
 1) Projection des demandes de congés validée ou pointée dans le premier tableau.
 2) Projection des demandes de congés non encore validée ou pointée dans le premier tableau.
+3) Accès rapide aux congés via le menu "click droit", et via l'icône de l'extension.
 
 <br>
 <br>

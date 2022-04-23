@@ -16,6 +16,10 @@
     },
     "default_popup": "popup/index.html"
   },
+  "permissions": ["contextMenus"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
   "author": "Antoine Duval",
   "homepage_url": "https://github.com/HeyHeyChicken/Assystem-Soldes-des-conges",
   "content_scripts": [
