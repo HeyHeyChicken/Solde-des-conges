@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Assystem - Soldes des congés",
-  "description": "...",
   "version": "1.0",
+  "description": "Cette extention Chrome améliore la page des soldes des congés de l'entreprise Assystem.",
   "icons": {
-    "128": "128.png"
+    "128": "icons/128.png",
+    "48": "icons/48.png",
+    "16": "icons/16.png"
   },
+  "author": "Antoine Duval",
+  "homepage_url": "https://github.com/HeyHeyChicken/Assystem-Soldes-des-conges",
   "content_scripts": [
    {
      "matches": ["https://hive-dashboard.assystem.com/*"],
