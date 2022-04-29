@@ -28,7 +28,7 @@ Voici les fonctionnalités qui sont ajoutées :<br/>
 
 ## Crédits
 
-- [Icônes de vacances créées par Freepik - Flaticon](https://www.flaticon.com/free-icons/vacation)
+- [Icône de vacances créée par Freepik - Flaticon](//www.flaticon.com/free-icon/beach-chair_3104921)
 
 <br>
 <br>
