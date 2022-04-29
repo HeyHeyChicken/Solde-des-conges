@@ -5,6 +5,9 @@ body{
 table{
   background-color: white;
 }
+#SoldeAbsences{
+    overflow: hidden!important;
+}
 #logoEgencia{
   height: 70px;
   width: 100px;
