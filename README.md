@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/HeyHeyChicken/Solde-des-conges/main/Solde%20des%20cong%C3%A9s/icons/256.png" width="256">
 
-Cette extention Chrome améliore la page des soldes des congés de l'entreprise Assystem.<br>
+Cette extention Chrome améliore la page des soldes des congés de l'entreprise **Assystem**.<br>
 </div>
 <br><br>
 <div align="center">
