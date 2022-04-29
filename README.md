@@ -3,6 +3,10 @@
 <img src="https://raw.githubusercontent.com/HeyHeyChicken/Solde-des-conges/main/Solde%20des%20cong%C3%A9s/icons/256.png" width="256">
 <br><br>
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/nonobcjfjlkjnmdcpbbncaiidbbnflji?label=Chrome%20Rating&style=flat&logo=google)](https://chrome.google.com/webstore/detail/assystem-soldes-des-conge/nonobcjfjlkjnmdcpbbncaiidbbnflji)
+[![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/nonobcjfjlkjnmdcpbbncaiidbbnflji?label=Chrome%20Users&style=flat&logo=google)](https://chrome.google.com/webstore/detail/assystem-soldes-des-conge/nonobcjfjlkjnmdcpbbncaiidbbnflji)
+<br><br>
+
 Cette extention Chrome améliore la page de solde des congés de l'entreprise **Assystem**.<br>
 </div>
 <br>
