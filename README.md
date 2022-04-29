@@ -26,6 +26,10 @@ Voici les fonctionnalités qui sont ajoutées :<br/>
 2) Projection des demandes de congés non encore validée ou pointée dans le premier tableau.
 3) Accès rapide aux congés via le menu "click droit", et via l'icône de l'extension.
 
+## Crédits
+
+- [Icônes de vacances créées par Freepik - Flaticon](https://www.flaticon.com/free-icons/vacation)
+
 <br>
 <br>
 
