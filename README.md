@@ -13,7 +13,7 @@ Cette extention Chrome améliore la page des soldes des congés de l'entreprise 
 
 ## Installation
 
-1) ...
+Instalez l'extension sur votre navigateur en cliquant sur le bouton "Ajouter à Chrome" présent sur [ce lien](//chrome.google.com/webstore/detail/assystem-soldes-des-conge/nonobcjfjlkjnmdcpbbncaiidbbnflji).
 
 ## Utilisation
 
