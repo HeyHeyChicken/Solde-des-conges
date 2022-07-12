@@ -2,12 +2,63 @@ body{
     padding-top: calc(5rem + 20px);
     background-color: #e9e7e3;
 }
+  body > #start_dev_mode{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  body > .alert{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 15px 30px 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    body > .alert:after{
+      content: "x";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 15px;
+      width: 15px;
+      background-color: #e9e7e3;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 13px;
+      font-weight: bold;
+    }
+    body > .alert.orange{
+      background-color: #FF9800;
+    }
+      body > .alert.orange:after{
+        color: #FF9800;
+      }
 table{
   background-color: white;
 }
+
 #SoldeAbsences{
     overflow: hidden!important;
 }
+
+table > tbody > tr > th input.futur{
+  border-radius: 3px;
+}
+  table > tbody > tr > th input.futur.red{
+    background-color: #F44336;
+  }
+table > tbody > tr > td input.futur{
+  width: 42px;
+  float: right;
+  margin-left: 5px;
+}
+  table > tbody > tr > td input[type="number"].futur::-webkit-inner-spin-button {
+    display: none;
+  }
+
 #logoEgencia{
   height: 70px;
   width: 100px;
